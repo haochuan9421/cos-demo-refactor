@@ -1,0 +1,36 @@
+{
+  "name": "cos-demo-refactor",
+  "version": "1.0.0",
+  "description": "腾讯云对象存储 COS 示例",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "cross-env PORT=3000 nodemon server/index.js",
+    "lint": "eslint --ext .js .",
+    "fix": "eslint --fix --ext .js ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaoChuan9421/cos-demo-refactor.git"
+  },
+  "keywords": [
+    "COS",
+    "腾讯云"
+  ],
+  "author": "HaoChuan9421",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaoChuan9421/cos-demo-refactor/issues"
+  },
+  "homepage": "https://github.com/HaoChuan9421/cos-demo-refactor#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.8.0",
+    "nodemon": "^1.18.5"
+  }
+}
