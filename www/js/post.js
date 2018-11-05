@@ -60,7 +60,7 @@ window.onload = function() {
         xhr.onload = function() {
           if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
             var p = document.createElement('p');
-            p.innerHTML = '<a href=' + prefix + pathname + ' download target="_blank">' + file.name + '</a>';
+            p.innerHTML = '<a href="' + prefix + pathname + '" download target="_blank">' + file.name + '</a>';
             document.body.appendChild(p);
           } else {
             showMsg('上传失败');
