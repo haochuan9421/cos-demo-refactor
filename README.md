@@ -15,3 +15,16 @@
 后端配置文件 ——> `config.js`
 
 前端配置文件 ——> `www/js/config.js`
+
+### Docker 部署
+
+```bash
+docker pull node
+docker build -t tencent-cos .
+docker run -d -p 3000:3000 tencent-cos
+
+docker container ls -a
+docker exec -i -t 容器名称或者容器ID bash
+exit
+```
+
